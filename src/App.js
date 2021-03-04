@@ -4,9 +4,9 @@ import "./index.css";
 import styled from "styled-components";
 
 const MainElement = styled.main`
-background-color: #FDFCDC;
-height: 100vh;
-`
+  background-color: #fdfcdc;
+  height: 100vh;
+`;
 const App = () => {
   const sections = useState([
     {
@@ -26,7 +26,24 @@ const App = () => {
     },
   ]);
 
+  function renderSwitch() {
+    switch (sectionSelected) {
+      case sections[0][0].name:
+        return <div>{sections[0][0].description}</div>      
+      case sections[0][1].name:
+        return <div>{sections[0][1].description}</div>
+      case sections[0][2].name:
+        return <div>{sections[0][2].description}</div>
+      case sections[0][3].name:
+        return <div>{sections[0][1].description}</div>
+      default:
+        return <div>This is my website</div>;
+    }
+  }
+
   const [sectionSelected, setSectionSelected] = useState("Casey Deriso");
+
+  console.log(sectionSelected === sections[0][3].name);
   return (
     <MainElement>
       <Nav
@@ -34,7 +51,7 @@ const App = () => {
         setSectionSelected={setSectionSelected}
         sectionSelected={sectionSelected}
       ></Nav>
-
+      {renderSwitch()}
     </MainElement>
   );
 };
