@@ -12,29 +12,33 @@ const NavBar = styled.header`
 `;
 
 const HeaderText = styled.h1`
-  color: tomato;
+  color: #00AFB9;
+  cursor: pointer;
 `;
 
 const NavElement = styled.a`
-  cursor: pointer;
+cursor: pointer;
 `;
 const ButtonWrapper = styled.div`
   display: flex;
   min-width: 75%;
   max-width: 50vw;
   justify-content: space-around;
+
 `;
 
 function Nav(props) {
   const { sections = [], sectionSelected, setSectionSelected } = props;
 
   useEffect(() => {
-    document.title = "test";
+    document.title = sectionSelected === "Casey Deriso" ? sectionSelected : `Casey Deriso/${sectionSelected}`;
   }, [sectionSelected]);
 
   return (
     <NavBar>
-      <HeaderText>Casey Deriso</HeaderText>
+      <HeaderText
+        onClick={() => document.location = "/"}
+      >Casey Deriso</HeaderText>
       <ButtonWrapper>
         {sections[0].map((selection) => {
           return (
@@ -48,30 +52,6 @@ function Nav(props) {
             </NavElement>
           );
         })}
-        {/* 
-        <NavElement
-          onClick={(e) => setSectionSelected(e.target.textContent)}
-        >
-          Contact
-        </NavElement>
-        <NavElement
-          className={sectionSelected === sections[0][1] && 'active'}
-          onClick={(e) => setSectionSelected(e.target.textContent)}
-        >
-          Resume
-        </NavElement>
-        <NavElement
-          className={sectionSelected === sections[0][2] && 'active'}
-          onClick={(e) => setSectionSelected(e.target.textContent)}
-        >
-          Portfolio
-        </NavElement>
-        <NavElement
-          className={sectionSelected === sections[0][3] && 'active'}
-          onClick={(e) => setSectionSelected(e.target.textContent)}
-        >
-          About Me
-        </NavElement> */}
       </ButtonWrapper>
     </NavBar>
   );

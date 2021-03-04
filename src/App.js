@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import Nav from "./components/Nav";
 import "./index.css";
+import styled from "styled-components";
 
+const MainElement = styled.main`
+background-color: #FDFCDC;
+height: 100vh;
+`
 const App = () => {
   const sections = useState([
     {
@@ -21,15 +26,16 @@ const App = () => {
     },
   ]);
 
-  const [sectionSelected, setSectionSelected] = useState(sections[0]);
+  const [sectionSelected, setSectionSelected] = useState("Casey Deriso");
   return (
-    <>
+    <MainElement>
       <Nav
         sections={sections}
         setSectionSelected={setSectionSelected}
         sectionSelected={sectionSelected}
       ></Nav>
-    </>
+
+    </MainElement>
   );
 };
 
