@@ -5,8 +5,6 @@ import Resume from "./components/Resume";
 import Nav from "./components/Nav";
 import "./index.css";
 
-const pdfFile = "https://pdfhost.io/v/A3QyqTdFW_CaseyDerisoPDF.pdf"
-
 const MainElement = styled.main`
   background-color: #fdfcdc;
   height: 100vh;
@@ -39,7 +37,7 @@ const App = () => {
       case sections[0][2].name:
         return <div>{sections[0][2].description}</div>;
       case sections[0][3].name:
-        return <Resume pdf={pdfFile}></Resume>;
+        return <Resume></Resume>;
 
       default:
         return <div>This is my website</div>;
