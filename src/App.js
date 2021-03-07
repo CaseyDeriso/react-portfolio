@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+import styled from "styled-components";
+
+import Resume from "./components/Resume";
 import Nav from "./components/Nav";
 import "./index.css";
-import styled from "styled-components";
+
+const pdfFile = "https://pdfhost.io/v/A3QyqTdFW_CaseyDerisoPDF.pdf"
 
 const MainElement = styled.main`
   background-color: #fdfcdc;
@@ -29,13 +33,14 @@ const App = () => {
   function renderSwitch() {
     switch (sectionSelected) {
       case sections[0][0].name:
-        return <div>{sections[0][0].description}</div>      
+        return <div>{sections[0][0].description}</div>;
       case sections[0][1].name:
-        return <div>{sections[0][1].description}</div>
+        return <div>{sections[0][1].description}</div>;
       case sections[0][2].name:
-        return <div>{sections[0][2].description}</div>
+        return <div>{sections[0][2].description}</div>;
       case sections[0][3].name:
-        return <div>{sections[0][1].description}</div>
+        return <Resume pdf={pdfFile}></Resume>;
+
       default:
         return <div>This is my website</div>;
     }
