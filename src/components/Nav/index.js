@@ -40,7 +40,7 @@ function Nav(props) {
         onClick={() => document.location = "/"}
       >Casey Deriso</HeaderText>
       <ButtonWrapper>
-        {sections[0].map((selection) => {
+        {sections.map((selection) => {
           return (
             <NavElement
               active={false}
