@@ -4,10 +4,10 @@ import styled from "styled-components";
 const PortfolioDiv = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 33.3vw);
-  grid-template-rows: repeat(3, 20vh);
+  grid-template-rows: repeat(3, 25vh);
   @media only screen and (max-width: 750px) {
       grid-template-columns: repeat(2, 50vw);
-      grid-template-rows: repeat(5, 30vh);
+      grid-template-rows: repeat(5, 25vh);
   };
   @media only screen and (max-width: 500px) {
     grid-template-columns: 100%;
@@ -23,7 +23,6 @@ const Project = styled.a`
 `;
 
 const ProjectHeader = styled.h4`
-  align-items: center;
   background-color: #fed9b7;
   opacity: 80%;
   display: none;
