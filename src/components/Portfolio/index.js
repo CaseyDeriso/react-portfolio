@@ -15,7 +15,7 @@ const Project = styled.div`
 `
 
 function Portfolio(props) {
-  const { projects } = props.section
+  const { projects } = props
   console.log(projects)
   return (
     <PortfolioDiv>

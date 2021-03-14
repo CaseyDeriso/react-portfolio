@@ -6,6 +6,7 @@ import Resume from "./components/Resume";
 import Nav from "./components/Nav";
 import "./index.css";
 import Portfolio from "./components/Portfolio";
+import projects from "./projects.json"
 
 const MainElement = styled.main`
   background-color: #fdfcdc;
@@ -27,45 +28,6 @@ const App = () => {
     {
       name: "Portfolio",
       description: "I've done some cool things.",
-      projects: [
-        {
-          name: "Wo-Ve-Mi",
-          technologies: ["HTML5", "CSS3", "JavaScript", "Jquery"],
-          description: `A business address search engine highlighting Women, Veteran and
-          Minority owned estalishments. Data from the SAM api is displayed
-          with dymanically created cards and Mapbox api.`,
-          link: "https://jenniferfadare.github.io/Wo-Ve-Mi/",
-        },
-        {
-          name: "D.O.G.S.",
-          technologies: ["Node.js", "Express.js", "Sequelize", "Handlebars"],
-          description: `A full-stack dog-themed social media website to connect dog owners 
-          searching for play-mates for their furry friends. `,
-          link: "https://murmuring-taiga-40351.herokuapp.com/",
-        },
-        {
-          name: "Tech Blog",
-          technologies: ["Node.js", "Express.js", "Sequelize", "Handlebars"],
-          description: `A blog-style CMS. This project is my first complete full stack application. 
-          Sign up and post a blog!`,
-          link: "https://guarded-escarpment-07152.herokuapp.com/",
-        },
-        {
-          name: "Weather Dashboard",
-          technologies: ["HTML5", "CSS3", "JavaScript"],
-          description: `A weather app using the Open Weather api. 
-          This application allows users to search for cities to see the forecast. 
-          Previous cities are saved in local storage and displayed on the dashboard for quick reference.`,
-          link: "https://caseyderiso.github.io/Weather-Dashboard",
-        },
-        {
-          name: "Pizza-Hunt",
-          technologies: ["JavaScript", "MongoDB", "Mongoose ODM", "Express.js"],
-          description: `A pizza themed social website where users can post their favorite pizza toppings.
-          Users also can comment on pizzas and reply to comments. All data is stored in a MongoDB database hosted on MongoDB Atlas.`,
-          link: "https://caseyderiso.github.io/Weather-Dashboard",
-        },
-      ],
     },
     {
       name: "Contact",
@@ -81,7 +43,7 @@ const App = () => {
       case sections[0].name:
         return <AboutMe section={sections[0]}></AboutMe>;
       case sections[1].name:
-        return <Portfolio section={sections[1]}></Portfolio>;
+        return <Portfolio section={sections[1]} projects={projects}></Portfolio>;
       case sections[2].name:
         return <div>{sections[2].description}</div>;
       case sections[3].name:

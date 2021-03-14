@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Wo-Ve-Mi",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Jquery"],
+    "description": "A business address search engine highlighting Women, Veteran and Minority owned estalishments. Data from the SAM api is displayed with dymanically created cards and Mapbox api.",
+    "link": "https://jenniferfadare.github.io/Wo-Ve-Mi/"
+  },
+  {
+    "name": "D.O.G.S.",
+    "technologies": ["Node.js", "Express.js", "Sequelize", "Handlebars"],
+    "description": "A full-stack dog-themed social media website to connect dog owners searching for play-mates for their furry friends.",
+    "link": "https://murmuring-taiga-40351.herokuapp.com/"
+  },
+  {
+    "name": "Readme Generator",
+    "technologies": ["Node.js", "Inquirer.js"],
+    "description": "A command line interface application designed to generate consistent professional READMEs with ease.",
+    "link": "https://github.com/CaseyDeriso/Readme-Generator"
+  },
+  {
+    "name": "Tech Blog",
+    "technologies": ["Node.js", "Express.js", "Sequelize", "Handlebars"],
+    "description": "A blog-style CMS. This project is my first complete full stack application. Sign up and post a blog!",
+    "link": "https://guarded-escarpment-07152.herokuapp.com/"
+  },
+  {
+    "name": "Employee Tracker",
+    "technologies": ["Node.js", "Mysql2", "Inquirer.js"],
+    "description": "A command line interface application that serves as an interface for a SQL based employee database.",
+    "link": "https://github.com/CaseyDeriso/Employee_Tracker"
+  },
+  {
+    "name": "Weather Dashboard",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "description": "A weather app using the Open Weather api. This application allows users to search for cities to see the forecast. Previous cities are saved in local storage and displayed on the dashboard for quick reference.",
+    "link": "https://caseyderiso.github.io/Weather-Dashboard"
+  },
+  {
+    "name": "Pizza-Hunt",
+    "technologies": ["JavaScript", "MongoDB", "Mongoose ODM", "Express.js"],
+    "description": "A pizza themed social website where users can post their favorite pizza toppings. Users also can comment on pizzas and reply to comments. All data is stored in a MongoDB database hosted on MongoDB Atlas.",
+    "link": "https://caseyderiso.github.io/Weather-Dashboard"
+  },
+  {
+    "name": "Team Space",
+    "technologies": ["Node.js", "Inquirer.js", "HTML5", "foundation.css"],
+    "description": "A command line interface application that will take input about your team members and generate a styled home page with cards showing information about each of your team members.",
+    "link": "https://github.com/CaseyDeriso/Team-Space"
+  }
+]
