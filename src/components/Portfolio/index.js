@@ -3,11 +3,20 @@ import styled from "styled-components";
 
 const PortfolioDiv = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 33.3vw);
+  grid-template-rows: repeat(3, 20vh);
+  @media only screen and (max-width: 750px) {
+      grid-template-columns: repeat(2, 50vw);
+      grid-template-rows: repeat(5, 30vh);
+  };
+  @media only screen and (max-width: 500px) {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(9, 30vh)
+  }
 `;
 
-const Project = styled.div`
+const Project = styled.a`
+  color: #000000;
   font-family: arial;
   background-size: cover;
   padding: 8px;
@@ -17,15 +26,21 @@ const ProjectHeader = styled.h4`
   align-items: center;
   background-color: #fed9b7;
   opacity: 80%;
-  display: inline-block;
+  display: none;
   padding: 0 5px;
+  ${Project}:hover & {
+    display: inline-block
+  };
 `
 
 const ProjectText = styled.p`
   background-color: #fed9b7;
   opacity: 80%;
-  display: inline-block;
+  display: none;
   padding: 0 5px;
+  ${Project}:hover & {
+    display: inline-block
+  };
 `
 
 

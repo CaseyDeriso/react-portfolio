@@ -50,7 +50,7 @@ const App = () => {
         return <Resume></Resume>;
 
       default:
-        return <div>This is my website</div>;
+        return <div>👋🏼 WAZZZZZAAAAAA! </div>;
     }
   }
 
