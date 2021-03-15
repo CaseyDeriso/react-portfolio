@@ -20,28 +20,30 @@ const Project = styled.a`
   font-family: arial;
   background-size: cover;
   padding: 8px;
+  text-decoration: none;
 `;
 
 const ProjectHeader = styled.h4`
   background-color: #fed9b7;
   opacity: 80%;
-  display: none;
+  display: flex;
+  text-decoration: none;
   padding: 0 5px;
-  ${Project}:hover & {
-    display: inline-block
-  };
+
 `
+  // ${Project}:hover & {
+  //   display: inline-block
+  // };
 
 const ProjectText = styled.p`
   background-color: #fed9b7;
   opacity: 80%;
-  display: none;
+  display: flex;
   padding: 0 5px;
-  ${Project}:hover & {
-    display: inline-block
-  };
 `
-
+  // ${Project}:hover & {
+  //   display: inline-block
+  // };
 
 function Portfolio(props) {
   const { projects } = props;

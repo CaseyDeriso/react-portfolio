@@ -42,15 +42,13 @@ const App = () => {
     switch (sectionSelected) {
       case sections[0].name:
         return <AboutMe section={sections[0]}></AboutMe>;
-      case sections[1].name:
-        return <Portfolio section={sections[1]} projects={projects}></Portfolio>;
       case sections[2].name:
         return <div>{sections[2].description}</div>;
       case sections[3].name:
         return <Resume></Resume>;
 
       default:
-        return <div>👋🏼 WAZZZZZAAAAAA! </div>;
+        return <Portfolio section={sections[1]} projects={projects}></Portfolio>;
     }
   }
 
