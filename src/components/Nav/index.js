@@ -9,6 +9,10 @@ const NavBar = styled.header`
   justify-content: space-between;
   align-items: center;
   margin: 0 10px;
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+    margin: 0;
+  }
 `;
 
 const HeaderText = styled.h1`
