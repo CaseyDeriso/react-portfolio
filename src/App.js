@@ -4,9 +4,13 @@ import styled from "styled-components";
 import AboutMe from "./components/AboutMe";
 import Resume from "./components/Resume";
 import Nav from "./components/Nav";
-import "./index.css";
 import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact"
+
 import projects from "./projects.json"
+
+import "./index.css";
+
 
 const MainElement = styled.main`
   background-color: #fdfcdc;
@@ -43,7 +47,7 @@ const App = () => {
       case sections[0].name:
         return <AboutMe section={sections[0]}></AboutMe>;
       case sections[2].name:
-        return <div>{sections[2].description}</div>;
+        return <Contact></Contact>;
       case sections[3].name:
         return <Resume></Resume>;
 
