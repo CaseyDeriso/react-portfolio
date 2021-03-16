@@ -21,7 +21,9 @@ const HeaderText = styled.h1`
 `;
 
 const NavElement = styled.a`
-cursor: pointer;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
 `;
 const ButtonWrapper = styled.div`
   display: flex;
@@ -51,6 +53,7 @@ function Nav(props) {
               key={selection.name}
               onClick={(e) => setSectionSelected(e.target.textContent)}
               className={ sectionSelected === selection.name ? "active" : ""}
+              href={ selection.name === "Resume" ? "https://drive.google.com/file/d/1e5e6sDzLvpXRJfRnuT5JSln6BuZBk_Yj/view?usp=sharing" : "#"}
             >
               {selection.name}
             </NavElement>

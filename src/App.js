@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 import AboutMe from "./components/AboutMe";
-import Resume from "./components/Resume";
 import Nav from "./components/Nav";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact"
@@ -48,8 +47,6 @@ const App = () => {
         return <AboutMe section={sections[0]}></AboutMe>;
       case sections[2].name:
         return <Contact></Contact>;
-      case sections[3].name:
-        return <Resume></Resume>;
 
       default:
         return <Portfolio section={sections[1]} projects={projects}></Portfolio>;

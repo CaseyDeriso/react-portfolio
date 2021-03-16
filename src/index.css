@@ -13,5 +13,5 @@ code {
 }
 
 .active {
-  color: #F07167
+  color: #F07167 !important
 }

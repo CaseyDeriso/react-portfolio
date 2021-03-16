@@ -49,10 +49,6 @@ const Title = styled.h1`
 `;
 
 
-const Text = styled.p`
-  font-family: 'Raleway', sans-serif;
-  color: ${props => props.color || '#4d4d4d'}
-`;
 
 
 function Contact() {
