@@ -2,9 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const TitleDiv = styled.div`
-  display: grid;
-  margin: 0 14px;
-  grid-template-columns: repeat(4, 1fr [col-start]);
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const PhotoContainer = styled.div`
