@@ -54,6 +54,8 @@ function Nav(props) {
               onClick={(e) => setSectionSelected(e.target.textContent)}
               className={ sectionSelected === selection.name ? "active" : ""}
               href={ selection.name === "Resume" ? "https://drive.google.com/file/d/1e5e6sDzLvpXRJfRnuT5JSln6BuZBk_Yj/view?usp=sharing" : "#"}
+              target={ selection.name === "Resume" ? 
+            "_blank" : "_self"}
             >
               {selection.name}
             </NavElement>
