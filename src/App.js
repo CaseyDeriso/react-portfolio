@@ -20,7 +20,7 @@ const App = () => {
     {
       name: "About Me",
       description: `
-      I am a Software Developer with an extensive background as an automotive technician. I recently earned a Certificate in Web Development from the University of Texas at Austin, where I was able to develop skills in HTML, CSS, and JavaScript.
+      I am a Software Developer with an extensive background as an automotive technician. I recently earned a Certificate in Web Development from the University of Texas at Austin, where I was able to develop skills in the MERN stack (MongoDB, Express, React, Node.js).
 
       I graduated from ACC with an Associate of Applied Science and began my career as a technician at Volkswagen. As a technician, I am responsible for staying educated on all electrical, mechanical and software based diagnostics procedures, new technical information and maintaining/repairing complex automotive systems.
 
