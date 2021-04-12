@@ -50,14 +50,13 @@ function Portfolio(props) {
   return (
     <PortfolioDiv>
       {projects.map((project, i) => {
-        const { name, description, screenshot, link } = project;
-        const background = require(`../../assets/photos/${screenshot}`).default
+        const { name, description, link } = project;
         return (
           <Project
             href={link}
             key={i}
             style={{
-              backgroundImage: `url(${background})`
+              backgroundColor: `hsl(${Math.floor(Math.random() * 360)}, 40%, 75%)`
             }}
           >
             <ProjectHeader>{name}</ProjectHeader>
