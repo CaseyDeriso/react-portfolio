@@ -5,11 +5,11 @@ const PortfolioDiv = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 33.3vw);
   grid-template-rows: repeat(3, 25vh);
-  @media only screen and (max-width: 750px) {
-      grid-template-columns: repeat(2, 50vw);
-      grid-template-rows: repeat(5, 25vh);
+  @media only screen and (max-width: 1000px) {
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(5, 25%);
   };
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 450px) {
     grid-template-columns: 100%;
     grid-template-rows: repeat(9, 30vh)
   }
