@@ -1,4 +1,11 @@
 [
+    {
+    "name": "Fit-Club",
+    "technologies": ["MERN stack", "SASS", "Socket.io"],
+    "description": "A social media website focusing on allowing users to submit and track fitness goals, find and communicate with personal trainers and attend virtual training sessions and manage workouts.",
+    "link": "https://fit-clob.herokuapp.com/",
+    "screenshot": "project-WoVeMi.JPG"
+  },
   {
     "name": "Wo-Ve-Mi",
     "technologies": ["HTML5", "CSS3", "JavaScript", "Jquery"],
