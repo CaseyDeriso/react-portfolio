@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
+import projects from "../../projects.json"
+import Modal from "../Modal";
 
 const MenuContainer = styled.div`
   background-color: rgba(197, 197, 197, 0.4);
@@ -24,14 +26,26 @@ const Icon = styled.a`
   padding: 0.1em 0.2em;
 `;
 
-export default function ProjectLinks({ links }) {
+export default function ProjectLinks({ links, screenshot }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const [currentPhoto, setCurrentPhoto] = useState();
+
+
+  function toggleModal(e, screenshot) {
+    e.preventDefault();
+    setCurrentPhoto(screenshot);
+    setIsModalOpen(!isModalOpen);
+  }
+
   return (
     <MenuContainer>
+      {isModalOpen && <Modal currentPhoto={currentPhoto} onClose={toggleModal} />}
       <link
         href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
         rel="stylesheet"
       />
-      {links[1] ? "Links:" : "Link:"}
+      Links:
       <Menu>
         <Icon
           href={links[0]}
@@ -42,6 +56,9 @@ export default function ProjectLinks({ links }) {
         {links[1] && (
           <Icon href={links[1]} target="_blank" className="ri-chrome-line" />
         )}
+
+        <Icon onClick={(e) => toggleModal(e, screenshot)} className="ri-screenshot-2-line"/>
+
       </Menu>
     </MenuContainer>
   );

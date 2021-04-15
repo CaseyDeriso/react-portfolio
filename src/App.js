@@ -13,7 +13,7 @@ import "./index.css";
 
 const MainElement = styled.main`
   background-color: #fdfcdc;
-  height: 150vh;
+  height: 100%;
   margin: 0;
 `;
 const App = () => {
