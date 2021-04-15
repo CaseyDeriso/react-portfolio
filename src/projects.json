@@ -3,70 +3,70 @@
     "name": "Fit-Club",
     "technologies": ["MERN stack", "SASS", "Socket.io"],
     "description": "A social media website focusing on allowing users to submit and track fitness goals, find and communicate with personal trainers and attend virtual training sessions and manage workouts.",
-    "link": "https://fit-clob.herokuapp.com/",
+    "links": ["https://github.com/maxhealy01/fit-club", "https://fit-clob.herokuapp.com/"],
     "screenshot": "project-WoVeMi.JPG"
   },
   {
     "name": "Wo-Ve-Mi",
     "technologies": ["HTML5", "CSS3", "JavaScript", "Jquery"],
     "description": "A business address search engine highlighting Women, Veteran and Minority owned estalishments. Data from the SAM api is displayed with dymanically created cards and Mapbox api.",
-    "link": "https://jenniferfadare.github.io/Wo-Ve-Mi/",
+    "links": ["https://github.com/JenniferFadare/Wo-Ve-Mi", "https://jenniferfadare.github.io/Wo-Ve-Mi/"],
     "screenshot": "project-WoVeMi.JPG"
   },
   {
     "name": "D.O.G.S.",
     "technologies": ["Node.js", "Express.js", "Sequelize", "Handlebars"],
     "description": "A full-stack dog-themed social media website to connect dog owners searching for play-mates for their furry friends.",
-    "link": "https://murmuring-taiga-40351.herokuapp.com/",
+    "links": ["https://github.com/JenniferFadare/D.O.G.S.", "https://murmuring-taiga-40351.herokuapp.com/"],
     "screenshot": "project-DOGS.png"
   },
   {
     "name": "Readme Generator",
     "technologies": ["Node.js", "Inquirer.js"],
     "description": "A command line interface application designed to generate consistent professional READMEs with ease.",
-    "link": "https://github.com/CaseyDeriso/Readme-Generator",
+    "links": ["https://github.com/CaseyDeriso/Readme-Generator"],
     "screenshot": "project-readmeGenerator.png"
   },
   {
     "name": "Tech Blog",
     "technologies": ["Node.js", "Express.js", "Sequelize", "Handlebars"],
     "description": "A blog-style CMS. This project is my first complete full stack application. Sign up and post a blog!",
-    "link": "https://guarded-escarpment-07152.herokuapp.com/",
+    "links": ["https://github.com/CaseyDeriso/Tech-Blog", "https://guarded-escarpment-07152.herokuapp.com/"],
     "screenshot": "project-TechBlog.png"
   },
   {
     "name": "Employee Tracker",
     "technologies": ["Node.js", "Mysql2", "Inquirer.js"],
     "description": "A command line interface application that serves as an interface for a SQL based employee database.",
-    "link": "https://github.com/CaseyDeriso/Employee_Tracker",
+    "links": ["https://github.com/CaseyDeriso/Employee_Tracker"],
     "screenshot": "project-employeeTracker.jpg"
   },
   {
     "name": "Weather Dashboard",
     "technologies": ["HTML5", "CSS3", "JavaScript"],
     "description": "A weather app using the Open Weather api. This application allows users to search for cities to see the forecast. Previous cities are saved in local storage and displayed on the dashboard for quick reference.",
-    "link": "https://caseyderiso.github.io/Weather-Dashboard",
+    "links": ["https://github.com/CaseyDeriso/Weather-Dashbaord", "https://caseyderiso.github.io/Weather-Dashboard"],
     "screenshot": "project-weatherDashboard.jpg"
   },
   {
     "name": "Pizza-Hunt",
     "technologies": ["JavaScript", "MongoDB", "Mongoose ODM", "Express.js"],
     "description": "A pizza themed social website where users can post their favorite pizza toppings. Users also can comment on pizzas and reply to comments. All data is stored in a MongoDB database hosted on MongoDB Atlas.",
-    "link": "https://caseyderiso.github.io/Weather-Dashboard",
+    "links": ["https://github.com/CaseyDeriso/Pizza-Hunt","https://caseyderiso.github.io/Weather-Dashboard"],
     "screenshot": "project-buckethead.jpg"
   },
   {
     "name": "Team Space",
     "technologies": ["Node.js", "Inquirer.js", "HTML5", "foundation.css"],
     "description": "A command line interface application that will take input about your team members and generate a styled home page with cards showing information about each of your team members.",
-    "link": "https://github.com/CaseyDeriso/Team-Space",
+    "links": ["https://github.com/CaseyDeriso/Team-Space"],
     "screenshot": "project-buckethead.jpg"
   },
   {
     "name": "Social Meadia Backend",
     "technologies": ["Node.js", "Dotenv", "Express.js", "Sequelize.js"],
     "description": "A backend database for e-commerce. This SQL databse uses the sequelize ODM and is testable with fetch managing sofware such as Insomnia Core.",
-    "link": "https://caseyderiso.github.io/E-Commerce-Backend",
+    "links": ["https://caseyderiso.github.io/E-Commerce-Backend"],
     "screenshot": "project-buckethead.jpg"
   }
 ]

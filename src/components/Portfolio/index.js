@@ -1,26 +1,32 @@
 import React from "react";
 import styled from "styled-components";
+import DeviconList from "../DeviconList";
+import ProjectLinks from "../ProjectLinks"
+
 
 const PortfolioDiv = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 33.3vw);
-  grid-template-rows: repeat(3, 25vh);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   @media only screen and (max-width: 1000px) {
       grid-template-columns: repeat(2, 50%);
       grid-template-rows: repeat(5, 25%);
   };
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 700px) {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(9, 30vh)
+    grid-template-rows: repeat(9, 50vh)
   }
 `;
 
-const Project = styled.a`
+const Project = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #000000;
   font-family: arial;
   background-size: cover;
   padding: 8px;
-  text-decoration: none;
 `;
 
 const ProjectHeader = styled.h4`
@@ -39,7 +45,9 @@ const ProjectText = styled.p`
   background-color: #fed9b7;
   opacity: 80%;
   display: flex;
-  padding: 0 5px;
+  padding: .2em .5em;
+  font-size: .9em;
+  width: clamp(34ch, 80%, 75ch);
 `
   // ${Project}:hover & {
   //   display: inline-block
@@ -50,10 +58,9 @@ function Portfolio(props) {
   return (
     <PortfolioDiv>
       {projects.map((project, i) => {
-        const { name, description, link } = project;
+        const { name, description, links, technologies } = project;
         return (
           <Project
-            href={link}
             key={i}
             style={{
               backgroundColor: `hsl(${Math.floor(Math.random() * 360)}, 40%, 75%)`
@@ -61,6 +68,10 @@ function Portfolio(props) {
           >
             <ProjectHeader>{name}</ProjectHeader>
             <ProjectText>{description}</ProjectText>
+            <DeviconList
+              technologies={technologies}
+            ></DeviconList>
+            <ProjectLinks links={links}/>
           </Project>
         );
       })}

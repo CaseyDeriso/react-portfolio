@@ -13,7 +13,8 @@ import "./index.css";
 
 const MainElement = styled.main`
   background-color: #fdfcdc;
-  height: 100vh;
+  height: 150vh;
+  margin: 0;
 `;
 const App = () => {
   const [sections] = useState([
