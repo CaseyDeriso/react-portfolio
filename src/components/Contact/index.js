@@ -8,8 +8,10 @@ const FormWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 90vh;
-  overflow: none;
+  height: 92vh;
+  @media only screen and (max-width: 700px) {
+    height: 90vh;
+  }
 `;
 
 const Form = styled.form`
