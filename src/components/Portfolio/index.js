@@ -1,19 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import DeviconList from "../DeviconList";
 import ProjectLinks from "../ProjectLinks";
+import Modal from "../Modal";
 
 const PortfolioDiv = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   @media only screen and (max-width: 1000px) {
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(5, 25%);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
   @media only screen and (max-width: 700px) {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(9, 50vh);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
   }
 `;
 
@@ -30,10 +31,10 @@ const Project = styled.div`
 
 const ProjectHeader = styled.h4`
   background-color: rgba(197, 197, 197, 0.4);
-  border-radius: .5em;
+  border-radius: 0.5em;
   display: flex;
   text-decoration: none;
-  padding: .4em 1em;
+  padding: 0.4em 1em;
   margin: 0.5em 0 0 0;
 `;
 // ${Project}:hover & {
@@ -42,9 +43,9 @@ const ProjectHeader = styled.h4`
 
 const ProjectText = styled.p`
   background-color: rgba(197, 197, 197, 0.4);
-  border-radius: .5em;
+  border-radius: 0.5em;
   display: flex;
-  padding: .4em 1em;
+  padding: 0.4em 1em;
   margin: 0.5em 0 0 0;
   font-size: 0.9em;
   width: clamp(34ch, 80%, 75ch);
@@ -55,8 +56,20 @@ const ProjectText = styled.p`
 
 function Portfolio(props) {
   const { projects } = props;
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const [currentPhoto, setCurrentPhoto] = useState();
+
+  function toggleModal(e, screenshot) {
+    e.preventDefault();
+    setCurrentPhoto(screenshot);
+    setIsModalOpen(!isModalOpen);
+  }
   return (
     <PortfolioDiv>
+      {isModalOpen && (
+        <Modal currentPhoto={currentPhoto} onClose={toggleModal} />
+      )}
       {projects.map((project, i) => {
         const { name, description, links, technologies, screenshot } = project;
         return (
@@ -71,7 +84,7 @@ function Portfolio(props) {
             <ProjectHeader>{name}</ProjectHeader>
             <ProjectText>{description}</ProjectText>
             <DeviconList technologies={technologies}></DeviconList>
-            <ProjectLinks links={links} screenshot={screenshot}/>
+            <ProjectLinks links={links} screenshot={screenshot} toggleModal={toggleModal}/>
           </Project>
         );
       })}
