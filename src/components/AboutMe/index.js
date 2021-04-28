@@ -9,7 +9,8 @@ const TitleDiv = styled.div`
   height: 91vh;
   @media only screen and (max-width: 700px) {
     height: 89vh;
-  }`;
+  }
+`;
 
 const PhotoContainer = styled.div`
   display: flex;
@@ -28,13 +29,14 @@ const TextContainer = styled.div`
   margin: 0 10%;
   grid-column: 3/5;
   white-space: pre-line;
-`
+`;
+
 const Text = styled.p`
   width: clamp(45ch, 50%, 75ch);
   color: #000000;
   opacity: 87%;
-  padding: .7em;
-`
+  padding: 0.7em;
+`;
 
 function AboutMe(props) {
   const { description } = props.section;
@@ -46,7 +48,9 @@ function AboutMe(props) {
           alt="Casey Deriso's headshot."
         />
       </PhotoContainer>
-      <TextContainer><Text>{description}</Text></TextContainer>
+      <TextContainer>
+        <Text>{description}</Text>
+      </TextContainer>
     </TitleDiv>
   );
 }
