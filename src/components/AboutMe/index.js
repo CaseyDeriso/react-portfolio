@@ -16,6 +16,12 @@ const PhotoContainer = styled.div`
   display: flex;
   width: 13em;
   height: 13em;
+
+  @media only screen and (max-width: 400px) {
+    height: 13vh;
+    width: 10.5em;
+  }
+
   border-radius: 20px;
   overflow: hidden;
   background-color: #0081a7;
