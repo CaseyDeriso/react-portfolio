@@ -9,7 +9,6 @@ const IconContainer = styled.div`
   `
 
 const Devicon = styled.i`
-  color: rgba(0,0,0,0.8);
   font-size: 3em;
   padding: .2em;
 

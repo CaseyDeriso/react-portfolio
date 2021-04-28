@@ -18,7 +18,8 @@ const Menu = styled.div`
 `;
 
 const Icon = styled.a`
-  color: rgba(17, 0, 255, 0.78);
+  cursor: pointer;
+  color: rgba(0,0,0,0.8);
   font-size: 2em;
   text-decoration: none;
   padding: 0.1em 0.2em;

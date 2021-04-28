@@ -16,7 +16,7 @@ const NavBar = styled.header`
 `;
 
 const HeaderText = styled.h1`
-  color: #00AFB9;
+  color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
 `;
 
