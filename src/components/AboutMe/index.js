@@ -6,22 +6,13 @@ const TitleDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 91vh;
-  @media only screen and (max-width: 700px) {
-    height: 89vh;
-  }
+  height: 100%;
 `;
 
 const PhotoContainer = styled.div`
   display: flex;
   width: 13em;
   height: 13em;
-
-  @media only screen and (max-width: 400px) {
-    height: 13vh;
-    width: 10.5em;
-  }
-
   border-radius: 20px;
   overflow: hidden;
   background-color: #0081a7;
@@ -52,6 +43,7 @@ function AboutMe(props) {
         <img
           src={require("../../assets/photos/me.jpg").default}
           alt="Casey Deriso's headshot."
+          style={{ height: "100%", width: "100%" }}
         />
       </PhotoContainer>
       <TextContainer>
