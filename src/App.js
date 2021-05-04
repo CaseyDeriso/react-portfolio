@@ -53,7 +53,7 @@ const App = () => {
     }
   }
 
-  const [sectionSelected, setSectionSelected] = useState("Casey Deriso");
+  const [sectionSelected, setSectionSelected] = useState("Portfolio");
 
   return (
     <MainElement>
