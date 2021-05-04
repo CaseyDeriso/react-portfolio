@@ -8,7 +8,7 @@ const IconContainer = styled.div`
   flex-wrap: wrap;
   `
 
-const Devicon = styled.i`
+const Devicon = styled.p`
   font-size: 3em;
   padding: .2em;
 
@@ -64,7 +64,7 @@ export default function DeviconList({ name, technologies }) {
           return (
             <>
             {!switchIcon(technology) ? <p>{technology}</p> : 
-              <Devicon key={`${name}${technology}`} className={switchIcon(technology)} />
+              <Devicon aria-label={name} key={`${name}${technology}`} className={switchIcon(technology)} />
             }
             </>
           );

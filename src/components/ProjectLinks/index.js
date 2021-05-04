@@ -40,15 +40,17 @@ export default function ProjectLinks({ links, toggleModal, screenshot }) {
             href={links[0]}
             target="_blank"
             className="devicon-github-original-wordmark"
+            aria-label="GitHub Repository"
           />
 
           {links[1] && (
-            <Icon href={links[1]} target="_blank" className="ri-chrome-line" />
+            <Icon href={links[1]} target="_blank" className="ri-chrome-line" aria-label="Deployed Application"/>
           )}
 
           <Icon
             onClick={(e) => toggleModal(e, screenshot)}
             className="ri-screenshot-2-line"
+            aria-label="open screenshot modal"
           />
         </Menu>
       </MenuContainer>
