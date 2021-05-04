@@ -8,9 +8,9 @@ const FormWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 92vh;
+  height: 90vh;
   @media only screen and (max-width: 700px) {
-    height: 90vh;
+    height: 88vh;
   }
 `;
 
@@ -89,7 +89,7 @@ function Contact() {
           className="ri-mail-add-fill"
         />
       </ContactGrid>
-      <Form onSubmit={(e) => {
+      {/* <Form onSubmit={(e) => {
         e.preventDefault();
         e.target.reset();
       }}>
@@ -97,7 +97,7 @@ function Contact() {
         <Input type="email" name="email" placeholder="Your Email" />
         <TextArea type="text" name="messgae" placeholder="Message" />
         <Button type="submit">Submit</Button>
-      </Form>
+      </Form> */}
     </FormWrapper>
   );
 }
