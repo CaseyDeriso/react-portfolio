@@ -66,6 +66,8 @@ function Contact() {
   return (
     <FormWrapper>
       <Title>Contact Me</Title>
+      <p>CaseyDeriso@gmail.com</p>
+      <p>(832) 451-2570 </p>
       <ContactGrid>
         <link
           href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"

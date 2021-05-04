@@ -7,14 +7,14 @@ import Modal from "../Modal";
 const PortfolioDiv = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   @media only screen and (max-width: 1000px) {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
   @media only screen and (max-width: 700px) {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
   }
 `;
 

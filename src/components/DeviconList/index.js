@@ -48,7 +48,9 @@ export default function DeviconList({ name, technologies }) {
       case "sequelize":
         return "devicon-mysql-plain";
       case "jquery":
-        return "devicon-jquery-plain"
+        return "devicon-jquery-plain";
+      case "aws":
+        return "devicon-amazonwebservices-plain-wordmark";
       default:
         return null;
     }

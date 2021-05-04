@@ -43,7 +43,7 @@ function Nav(props) {
   return (
     <NavBar>
       <HeaderText
-        onClick={() => document.location = "/"}
+        onClick={() => setSectionSelected("Portfolio")}
       >Casey Deriso</HeaderText>
       <ButtonWrapper>
         {sections.map((selection) => {

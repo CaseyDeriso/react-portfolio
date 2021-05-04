@@ -18,6 +18,10 @@ const MainElement = styled.main`
 const App = () => {
   const [sections] = useState([
     {
+      name: "Portfolio",
+      description: "I've done some cool things.",
+    },
+    {
       name: "About Me",
       description: `
       I am a Software Developer with an extensive background as an automotive technician. I recently earned a Certificate in Web Development from the University of Texas at Austin, where I was able to develop skills in the MERN stack (MongoDB, Express, React, Node.js).
@@ -27,10 +31,6 @@ const App = () => {
       My most rewarding contribution to the team at Volkswagen and Audi has been mentoring new technicians. I teach them key skills such as proper repair documentation and managing their time, which lead to their success as technicians.
 
       I am positioned to place a strong emphasis on working collaboratively with a like-minded team to ensure optimal results within any organization.`,
-    },
-    {
-      name: "Portfolio",
-      description: "I've done some cool things.",
     },
     {
       name: "Contact",
@@ -43,8 +43,8 @@ const App = () => {
 
   function renderSwitch() {
     switch (sectionSelected) {
-      case sections[0].name:
-        return <AboutMe section={sections[0]}></AboutMe>;
+      case sections[1].name:
+        return <AboutMe section={sections[1]}></AboutMe>;
       case sections[2].name:
         return <Contact></Contact>;
 
