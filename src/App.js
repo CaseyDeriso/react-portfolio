@@ -31,6 +31,7 @@ const App = () => {
       My most rewarding contribution to the team at Volkswagen and Audi has been mentoring new technicians. I teach them key skills such as proper repair documentation and managing their time, which lead to their success as technicians.
 
       I am positioned to place a strong emphasis on working collaboratively with a like-minded team to ensure optimal results within any organization.`,
+      technologies: ["React.js", "JavaScript", "Node.js", "HTML5", "CSS3", "AWS", "SASS", "GIT", "mySQL", "Express.js", "MongoDB"]
     },
     {
       name: "Contact",

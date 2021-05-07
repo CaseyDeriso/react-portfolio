@@ -23,34 +23,36 @@ const Devicon = styled.p`
 export default function DeviconList({ name, technologies }) {
   const switchIcon = (name) => {
     switch (name.toLowerCase()) {
-      case "react":
-        return "devicon-react-original";
+      case "react.js":
+        return "devicon-react-original-wordmark colored";
       case "sass":
-        return "devicon-sass-original";
+        return "devicon-sass-original colored";
       case "javascript":
-        return "devicon-javascript-plain";
+        return "devicon-javascript-plain colored";
       case "css3":
-        return "devicon-css3-plain-wordmark";
+        return "devicon-css3-plain-wordmark colored";
       case "html5":
-        return "devicon-html5-plain-wordmark";
+        return "devicon-html5-plain-wordmark colored";
       case "handlebars":
         return "devicon-handlebars-plain-wordmark";
       case "express.js":
         return "devicon-express-original";
       case "node.js":
-        return "devicon-nodejs-plain";
+        return "devicon-nodejs-plain colored";
       case "mongodb":
-        return "devicon-mongodb-plain-wordmark";
+        return "devicon-mongodb-plain-wordmark colored";
       case "foundation.css":
         return "devicon-foundation-plain-wordmark";
-      case "mysql2":
-        return "devicon-mysql-plain";
+      case "mysql":
+        return "devicon-mysql-plain-wordmark colored";
       case "sequelize":
         return "devicon-mysql-plain";
       case "jquery":
         return "devicon-jquery-plain";
       case "aws":
-        return "devicon-amazonwebservices-plain-wordmark";
+        return "devicon-amazonwebservices-plain-wordmark colored";
+      case "git":
+        return "devicon-git-plain-wordmark colored"
       default:
         return null;
     }
