@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const AboutMain = styled.div`
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
 `
 
 export const AboutSection = styled.section`
@@ -11,7 +12,7 @@ export const AboutSection = styled.section`
   flex-direction: column;
   align-items: flex-start;
   white-space: pre-line;
-  width: 50%;
+  max-width: 55%
 `
 
 export const AboutPhoto = styled.div`

@@ -12,7 +12,7 @@ import "./index.css";
 
 
 const MainElement = styled.main`
-  background-color: #fdfcdc;
+  background-color: #fffff;
   margin: 0;
 `;
 const App = () => {
