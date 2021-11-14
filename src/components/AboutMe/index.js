@@ -12,7 +12,7 @@ const TitleDiv = styled.div`
 const PhotoContainer = styled.div`
   display: flex;
   width: 13em;
-  height: 2000px;
+  height: 13em;
   border-radius: 20px;
   background-color: #0081a7;
   padding: 1em;
