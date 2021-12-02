@@ -28,7 +28,7 @@ const App = () => {
 
       I graduated from ACC with an Associate of Applied Science and began my career as a technician at Volkswagen. As a technician, I am responsible for staying educated on all electrical, mechanical and software based diagnostics procedures, new technical information and maintaining/repairing complex automotive systems.
 
-      My most rewarding contribution to the team at Volkswagen and Audi has been mentoring new technicians. I teach them key skills such as proper repair documentation and managing their time, which lead to their success as technicians.
+      In my current position at The University of Texas at Austin, I work with a small but agile team of developers maintaining a complex platform built with Angular.js, Python, Django and a plethora of internal tools available in UT's development environment.
 
       I am positioned to place a strong emphasis on working collaboratively with a like-minded team to ensure optimal results within any organization.`,
     },
