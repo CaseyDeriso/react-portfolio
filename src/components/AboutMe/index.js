@@ -14,7 +14,7 @@ const PhotoContainer = styled.div`
   width: 13em;
   height: 13em;
   border-radius: 20px;
-  background-color: #0081a7;
+  background-color: #3a89408f;
   padding: 1em;
 `;
 
