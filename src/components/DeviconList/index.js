@@ -62,15 +62,13 @@ export default function DeviconList({ name, technologies }) {
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css"
       />
       <IconContainer>
-        {technologies.map((technology) => {
-          return (
-            <>
-            {!switchIcon(technology) ? <p>{technology}</p> : 
-              <Devicon aria-label={name} key={`${name}${technology}`} className={switchIcon(technology)} />
-            }
-            </>
-          );
-        })}
+        {technologies.map((technology, idx) => (
+          <React.Fragment key={idx}>
+          {!switchIcon(technology) ? <p>{technology}</p> : 
+            <Devicon aria-label={name} className={switchIcon(technology)} />
+          }
+          </React.Fragment>
+        ))}
       </IconContainer>
     </>
   );
