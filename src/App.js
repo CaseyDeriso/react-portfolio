@@ -24,11 +24,9 @@ const App = () => {
     {
       name: "About Me",
       description: `
-      I am a Software Developer with an extensive background as an automotive technician. I recently earned a Certificate in Web Development from the University of Texas at Austin, where I was able to develop skills in the MERN stack (MongoDB, Express, React, Node.js).
+      I am a Software Developer with an extensive background as an Automotive Technician. I recently earned a Certificate in Web Development from the University of Texas at Austin, where I was able to develop skills in the MERN stack (MongoDB, Express, React, Node.js) and I graduated from ACC with an Associate of Applied Science in 2015.
 
-      I graduated from ACC with an Associate of Applied Science and began my career as a technician at Volkswagen. As a technician, I am responsible for staying educated on all electrical, mechanical and software based diagnostics procedures, new technical information and maintaining/repairing complex automotive systems.
-
-      In my current position at The University of Texas at Austin, I work with a small but agile team of developers maintaining a complex platform built with Angular.js, Python, Django and a plethora of internal tools available in UT's development environment.
+      In my current position at The University of Texas at Austin, I work with a small but agile team of developers maintaining a complex platform built with Angular.js, Python, Django and a plethora of internal tools available in UT's development environment. My most impactful contribution to the team has been working towards transitioning the local development environment to use docker containers. I quickly familiarized myself with the code base, product and development tools to ensure what I built would perform reliably and offer the same functionality.
 
       I am positioned to place a strong emphasis on working collaboratively with a like-minded team to ensure optimal results within any organization.`,
     },
