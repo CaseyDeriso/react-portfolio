@@ -5,6 +5,7 @@ import AboutMe from "./components/AboutMe";
 import Nav from "./components/Nav";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact"
+import Blog from "./components/Blog";
 
 import projects from "./projects.json"
 
@@ -39,6 +40,10 @@ const App = () => {
     {
       name: "Resume",
     },
+    {
+      name: "Blog",
+      description: "Some cool stuff I've been up to."
+    }
   ]);
 
   function renderSwitch() {
@@ -47,6 +52,8 @@ const App = () => {
         return <AboutMe section={sections[1]}></AboutMe>;
       case sections[2].name:
         return <Contact></Contact>;
+      case sections[4].name:
+        return <Blog></Blog>
 
       default:
         return <Portfolio section={sections[1]} projects={projects}></Portfolio>;
